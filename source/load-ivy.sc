@@ -16,7 +16,7 @@ import $ivy.`edu.berkeley.cs::chiseltest:0.5.4`
 import $ivy.`edu.berkeley.cs::dsptools:1.4.+`
 import $ivy.`org.scalanlp::breeze:0.13.2`
 import $ivy.`edu.berkeley.cs::rocket-dsptools:1.2.0`
-import $ivy.`edu.berkeley.cs::firrtl-diagrammer:1.3.+`
+import $ivy.`edu.berkeley.cs::firrtl-diagrammer:1.5.4`
 
 import $ivy.`org.scalatest::scalatest:3.2.2`
 
