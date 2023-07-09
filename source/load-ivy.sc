@@ -4,15 +4,15 @@ interp.repositories() ::: List(
 
 @
 
-interp.configureCompiler(x => x.settings.source.value = scala.tools.nsc.settings.ScalaVersion("2.11.12"))
+interp.configureCompiler(x => x.settings.source.value = scala.tools.nsc.settings.ScalaVersion("2.13.8"))
 
 // Uncomment and change to use proxy
 // System.setProperty("https.proxyHost", "proxy.example.com")
 // System.setProperty("https.proxyPort", "3128")
 
-import $ivy.`edu.berkeley.cs::chisel3:3.4.+`
+import $ivy.`edu.berkeley.cs::chisel3:3.5.4`
 import $ivy.`edu.berkeley.cs::chisel-iotesters:1.5.+`
-import $ivy.`edu.berkeley.cs::chiseltest:0.3.+`
+import $ivy.`edu.berkeley.cs::chiseltest:0.5.4`
 import $ivy.`edu.berkeley.cs::dsptools:1.4.+`
 import $ivy.`org.scalanlp::breeze:0.13.2`
 import $ivy.`edu.berkeley.cs::rocket-dsptools:1.2.0`

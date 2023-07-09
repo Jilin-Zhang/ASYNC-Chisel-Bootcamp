@@ -23,8 +23,8 @@ ENV ALMOND_VERSION=0.9.1
 
 ENV COURSIER_CACHE=/coursier_cache
 
-ADD . /chisel-bootcamp/
-WORKDIR /chisel-bootcamp
+ADD . /async-chisel-bootcamp/
+WORKDIR /async-chisel-bootcamp
 
 ENV JUPYTER_CONFIG_DIR=/jupyter/config
 ENV JUPITER_DATA_DIR=/jupyter/data
@@ -60,10 +60,10 @@ FROM base as final
 COPY --from=intermediate-builder /coursier_cache/ /coursier_cache/
 COPY --from=intermediate-builder /usr/local/share/jupyter/kernels/scala/ /usr/local/share/jupyter/kernels/scala/
 
-RUN chown -R bootcamp:bootcamp /chisel-bootcamp
+RUN chown -R bootcamp:bootcamp /async-chisel-bootcamp
 
 USER bootcamp
-WORKDIR /chisel-bootcamp
+WORKDIR /async-chisel-bootcamp
 
 EXPOSE 8888
 CMD jupyter notebook --no-browser --ip 0.0.0.0 --port 8888
